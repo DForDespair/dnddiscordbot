@@ -6,24 +6,24 @@ import jakarta.persistence.Entity;
 import java.util.Set;
 
 @Entity
-public class Potions extends Item {
-    public Potions(String name, String description, boolean isMagic, double weight, Set<StoreInventoryItem> storeInventoryItems) {
+public class Potion extends Item {
+    public Potion(String name, String description, boolean isMagic, double weight, Set<StoreInventoryItem> storeInventoryItems) {
         super(name, description, isMagic, weight, storeInventoryItems);
     }
 
-    public Potions(String name, boolean isMagic, double weight, Set<StoreInventoryItem> storeInventoryItems) {
+    public Potion(String name, boolean isMagic, double weight, Set<StoreInventoryItem> storeInventoryItems) {
         super(name, isMagic, weight, storeInventoryItems);
     }
 
-    public Potions(String name, String description, boolean isMagic, double weight) {
+    public Potion(String name, String description, boolean isMagic, double weight) {
         super(name, description, isMagic, weight);
     }
 
-    public Potions(String name, boolean isMagic, double weight) {
+    public Potion(String name, boolean isMagic, double weight) {
         super(name, isMagic, weight);
     }
 
-    public Potions() {
+    public Potion() {
     }
 
     public String toString() {
